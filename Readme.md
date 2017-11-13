@@ -1,7 +1,7 @@
 # Личный проект «YetiCave» 
 
 * Студент: [Мартин Алексеев](https://up.htmlacademy.ru/php/3/user/578553).
-* Наставник: `Неизвестно`.
+* Наставник: `Андрей Ратушный` (https://htmlacademy.ru/profile/id446525). 
 
 ---
 
