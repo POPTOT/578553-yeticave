@@ -7,6 +7,7 @@ $user_avatar = 'img/user.jpg';
 // устанавливаем часовой пояс в Московское время
 date_default_timezone_set('Europe/Moscow');
 
+
 // записать в эту переменную оставшееся время в этом формате (ЧЧ:ММ)
 $lot_time_remaining = "00:00";
 
@@ -43,24 +44,24 @@ $lot_time_remaining = gmdate("H:i:s", $tomorrow - $now);
 
         <nav class="user-menu">
             <?php
-            if ($is_auth == 1) {
-                echo ("<div class="user-menu__image">
+            if ($is_auth == 1): 
+                echo "<div class="user-menu__image">
     <img src="$user_avatar" width="40" height="40" alt="Пользователь">
   </div>
   <div class="user-menu__logged">
     <p>$user_name</p>
-  </div>");
-            }
-            else {
-                echo ("<ul class="user-menu__list">
+  </div>";
+            
+            elseif ($is_auth == 6) :
+                echo "<ul class="user-menu__list">
     <li class="user-menu__item">
       <a href="#">Регистрация</a>
     </li>
     <li class="user-menu__item">
       <a href="#">Вход</a>
     </li>
-  </ul>");
-            }
+  </ul>";
+           
             ?>
         <!-- здесь должен быть PHP код для показа аватара пользователя -->
 
